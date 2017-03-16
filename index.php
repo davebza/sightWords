@@ -15,23 +15,19 @@
 <body>
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
-            <h1>Testing the Php and MySql connection to JS and Html</h1>
+            <h1>Sightwords webapp</h1>
         </div>
     </nav>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-3" id="lives">
-                <h2>MySql to Php to jQuery to Html:</h2>
-                <?php include 'scripts.php';?>
-
-                <div id="lifeOutput">
-                    <!-- number of lives go here -->
-                </div>
+            <div class="col-md-3" id="leftSidebar">
+                <?php include 'php/scripts.php' ;?>
+                Sidebar
             </div>
-            <div class="col-md-6" id="canvasContainer">
+            <div class="col-md-6" id="formContainer">
                 <!-- game canvas goes here -->
                 <fieldset>
-                    <form action="handleForm.php" method="post" id="thisForm">
+                    <form action="php/handleForm.php" method="post" id="thisForm">
                         <h2>hi</h2>
                         <input type="submit" value="click"/>
 
